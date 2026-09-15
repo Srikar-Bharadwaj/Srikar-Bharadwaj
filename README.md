@@ -20,13 +20,27 @@
 <img src="https://img.shields.io/badge/ISC2-CC-334155?style=flat-square" alt="ISC2 Certified in Cybersecurity" />
 </p>
 
+<sub>
+<a href="#-about-me">About</a> ·
+<a href="#-experience">Experience</a> ·
+<a href="#-featured-projects">Projects</a> ·
+<a href="#-research--current-focus">Research</a> ·
+<a href="#️-technical-toolkit">Toolkit</a> ·
+<a href="#-education--certifications">Education</a> ·
+<a href="#-highlights">Highlights</a> ·
+<a href="#-github-analytics">Analytics</a> ·
+<a href="#-lets-connect">Contact</a>
+</sub>
+
 </div>
 
-👋 About Me
+---
 
-I’m M. Srikar Bharadwaj, a final-year B.Tech Computer Science & Engineering (Information Security) student at VIT Vellore with an 8.71/10 CGPA.
+## 👋 About Me
 
-My work sits at the intersection of backend engineering, full-stack development, applied GenAI, and security. I enjoy taking an unclear requirement, turning it into architecture and data flows, and then building software that is practical, reliable, and usable.
+I'm **M. Srikar Bharadwaj**, a final-year **B.Tech Computer Science & Engineering (Information Security)** student at **VIT Vellore** with an **8.71/10 CGPA**.
+
+My work sits at the intersection of **backend engineering, full-stack development, applied GenAI, and security**. I enjoy taking an unclear requirement, turning it into architecture and data flows, and then building software that is practical, reliable, and usable.
 
 <table>
 <tr>
@@ -49,17 +63,20 @@ OWASP, network security, credential exposure analysis, and SOC fundamentals.
 </tr>
 </table>
 
-Current direction
+### Current direction
 
+```text
 Backend       → Spring Boot · Django · Node.js · REST APIs · PostgreSQL · Redis
 AI            → LLM APIs · structured output · agent-based workflows · AI copilots
 Systems       → Kafka · Docker · Linux · event-driven architecture · live telemetry
 Full-Stack    → React · Next.js · HTML · CSS
 Security      → OWASP Top 10 · Network Security · SIEM/SOC Fundamentals
 Foundations   → DSA · problem solving · debugging · system thinking
+```
 
-How I approach a technical problem
+### How I approach a technical problem
 
+```mermaid
 flowchart LR
     A[Problem] --> B[Requirements]
     B --> C[Architecture]
@@ -67,36 +84,38 @@ flowchart LR
     D --> E[AI / Automation]
     E --> F[Security + Reliability]
     F --> G[Ship + Iterate]
+```
 
 <sub>Engineering mindset: understand the problem first, make the data flow explicit, build the smallest reliable system, then iterate.</sub>
 
-💼 Experience
+---
 
-SOC Intern — CyArt Tech LLP
+## 💼 Experience
 
-May 2026 – Present · Remote
+### SOC Intern — CyArt Tech LLP
+**May 2026 – Present · Remote**
 
-Working on the CyBreach platform with an engineering-heavy focus across backend architecture, requirements analysis, and iterative development.
+Working on the **CyBreach** platform with an engineering-heavy focus across backend architecture, requirements analysis, and iterative development.
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-01 · Data Architecture
+**🗂️ 01 · Data Architecture**
 
-Designed backend data architecture for the Compliance Evidence Aggregator module to consolidate multi-system evidence into an auditable structure.
-
-</td>
-<td width="33%" valign="top">
-
-02 · Architecture Translation
-
-Created a technical proposal for the Assurance module, translating vague requirements into architecture, ER diagrams, data flows, and end-to-end use cases.
+Designed backend data architecture for the **Compliance Evidence Aggregator** module to consolidate multi-system evidence into an auditable structure.
 
 </td>
 <td width="33%" valign="top">
 
-03 · Engineering Cycle
+**🧭 02 · Architecture Translation**
+
+Created a technical proposal for the **Assurance module**, translating vague requirements into architecture, ER diagrams, data flows, and end-to-end use cases.
+
+</td>
+<td width="33%" valign="top">
+
+**🔁 03 · Engineering Cycle**
 
 Applied structured problem-solving, debugging, and iterative software-engineering practices on a production-level platform.
 
@@ -104,56 +123,47 @@ Applied structured problem-solving, debugging, and iterative software-engineerin
 </tr>
 </table>
 
-🚀 Featured Projects
+---
+
+## 🚀 Featured Projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-🚚 FleetOps
-
-Real-Time Fleet Management & Logistics Intelligence Platform
+### 🚚 FleetOps
+**Real-Time Fleet Management & Logistics Intelligence Platform**
 
 A backend-heavy platform for live vehicle telemetry, dispatch, maintenance, geofencing, and AI-assisted operations.
 
-Stack
-Java 17 Spring Boot 3 Apache Kafka PostgreSQL Redis Docker Mappls GIS
+**Stack**
+`Java 17` `Spring Boot 3` `Apache Kafka` `PostgreSQL` `Redis` `Docker` `Mappls GIS`
 
-Highlights
-
-Real-time fleet tracking across national freight corridors.
-
-Map-based dashboard for nationwide fleet visibility.
-
-Groq-hosted GenAI copilot for telemetry, dispatch, maintenance, and corridor queries.
-
-Explored AI-assisted root-cause workflows for maintenance and delay diagnosis.
+**Highlights**
+- Real-time fleet tracking across national freight corridors.
+- Map-based dashboard for nationwide fleet visibility.
+- **Groq-hosted GenAI copilot** for telemetry, dispatch, maintenance, and corridor queries.
+- Explored AI-assisted root-cause workflows for maintenance and delay diagnosis.
 
 <a href="https://github.com/Srikar-Bharadwaj/FleetOps"><img src="https://img.shields.io/badge/VIEW%20REPOSITORY-2563EB?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="View FleetOps repository" /></a>
 
 </td>
 <td width="50%" valign="top">
 
-🔐 CredHunt
-
-Automated Credential Discovery & Exposure Analysis Framework
+### 🔐 CredHunt
+**Automated Credential Discovery & Exposure Analysis Framework**
 
 A modular Python scanner for discovering, validating, and reporting exposed credentials, API keys, and secrets.
 
-Stack
-Python Multithreading Regex Engineering
+**Stack**
+`Python` `Multithreading` `Regex Engineering`
 
-Highlights
-
-Plugin-based orchestrator / worker-pool architecture.
-
-HTTP, FTP, SMTP, and SSH scanning.
-
-Entropy + allowlisting for contextual validation and false-positive reduction.
-
-Evidence provenance, severity, live output, and HTML/PDF reporting.
-
-Rate limiting + explicit consent controls for safe operation.
+**Highlights**
+- Plugin-based orchestrator / worker-pool architecture.
+- HTTP, FTP, SMTP, and SSH scanning.
+- Entropy + allowlisting for contextual validation and false-positive reduction.
+- Evidence provenance, severity, live output, and HTML/PDF reporting.
+- Rate limiting + explicit consent controls for safe operation.
 
 <a href="https://github.com/Srikar-Bharadwaj/CredHunt"><img src="https://img.shields.io/badge/VIEW%20REPOSITORY-7C3AED?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="View CredHunt repository" /></a>
 
@@ -162,48 +172,38 @@ Rate limiting + explicit consent controls for safe operation.
 <tr>
 <td width="50%" valign="top">
 
-🤖 Skill-Agent
-
-AI-Powered Skill Assessment Platform
+### 🤖 Skill-Agent
+**AI-Powered Skill Assessment Platform**
 
 A full-stack application that converts user inputs into skill-gap analysis and personalized learning roadmaps.
 
-Stack
-Next.js React Python Anthropic API
+**Stack**
+`Next.js` `React` `Python` `Anthropic API`
 
-Highlights
-
-LLM-powered skill assessment and roadmap generation.
-
-Custom unstructured LLM output → structured JSON parsing.
-
-Reliable frontend rendering from normalized model output.
-
-Serverless deployment on Vercel.
+**Highlights**
+- LLM-powered skill assessment and roadmap generation.
+- Custom **unstructured LLM output → structured JSON** parsing.
+- Reliable frontend rendering from normalized model output.
+- Serverless deployment on **Vercel**.
 
 <a href="https://github.com/Srikar-Bharadwaj/Skill-Agent"><img src="https://img.shields.io/badge/VIEW%20REPOSITORY-06B6D4?style=for-the-badge&logo=github&logoColor=111827" alt="View Skill-Agent repository" /></a>
 
 </td>
 <td width="50%" valign="top">
 
-📡 Advanced Network Scanner & Profiler
-
-Automated LAN Discovery & Device Profiling
+### 📡 Advanced Network Scanner & Profiler
+**Automated LAN Discovery & Device Profiling**
 
 A Python-based network utility for discovering hosts, identifying devices, scanning services, and building a network inventory.
 
-Focus
-Python Network Mapping Device Fingerprinting Nmap Wireshark
+**Stack**
+`Python` `Nmap` `Wireshark` `Network Mapping` `Device Fingerprinting`
 
-Highlights
-
-Automated LAN host discovery.
-
-Device and vendor identification.
-
-Lightweight service / port discovery.
-
-Network inventory-oriented output.
+**Highlights**
+- Automated LAN host discovery.
+- Device and vendor identification.
+- Lightweight service / port discovery.
+- Network inventory-oriented output.
 
 <a href="https://github.com/Srikar-Bharadwaj/Advanced-Network-Scanner-and-Profiler"><img src="https://img.shields.io/badge/VIEW%20REPOSITORY-0F766E?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="View Advanced Network Scanner and Profiler repository" /></a>
 
@@ -211,24 +211,24 @@ Network inventory-oriented output.
 </tr>
 </table>
 
-🧠 Research & Current Focus
+---
+
+## 🧠 Research & Current Focus
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-🤖 Applied AI
-
-Making AI useful inside software
+### 🤖 Applied AI
+**Making AI useful inside software**
 
 Exploring LLM API integration, structured outputs, parsing pipelines, copilots, and agent-based workflows that fit into conventional applications.
 
 </td>
 <td width="50%" valign="top">
 
-🏗️ Backend & Distributed Systems
-
-Designing around data flow
+### 🏗️ Backend & Distributed Systems
+**Designing around data flow**
 
 Building deeper hands-on experience with Spring Boot, REST APIs, Kafka, PostgreSQL, Redis, Docker, telemetry, and event-driven architecture.
 
@@ -237,48 +237,44 @@ Building deeper hands-on experience with Spring Boot, REST APIs, Kafka, PostgreS
 <tr>
 <td width="50%" valign="top">
 
-🛡️ Secure Engineering
-
-Security as an engineering constraint
+### 🛡️ Secure Engineering
+**Security as an engineering constraint**
 
 Applying OWASP, network-security, credential-exposure, and SOC concepts while considering reliability, usability, consent, and operational safety.
 
 </td>
 <td width="50%" valign="top">
 
-🧩 Problem Solving
+### 🧩 Problem Solving
+**Algorithms + architecture + debugging**
 
-Algorithms + architecture + debugging
-
-Strengthening fundamentals through 120+ LeetCode problems and carrying the same structured reasoning into system design and troubleshooting.
+Strengthening fundamentals through **120+ LeetCode problems** and carrying the same structured reasoning into system design and troubleshooting.
 
 </td>
 </tr>
 </table>
 
-🛠️ Technical Toolkit
+---
 
-Languages
+## 🛠️ Technical Toolkit
 
+**Languages**
 <p>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=c,cpp,python,java,cs,js&perline=6&theme=dark" alt="C, C++, Python, Java, C Sharp and JavaScript" /></a>
 <img src="https://img.shields.io/badge/SQL-334155?style=for-the-badge&logo=postgresql&logoColor=FFFFFF" alt="SQL" />
 </p>
 
-Frontend & Backend
-
+**Frontend & Backend**
 <p>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=html,css,react,nextjs,nodejs,django,spring&perline=7&theme=dark" alt="HTML, CSS, React, Next.js, Node.js, Django and Spring Boot" /></a>
 </p>
 
-Data, DevOps & Cloud
-
+**Data, DevOps & Cloud**
 <p>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,postgres,redis,docker,linux,git,github&perline=7&theme=dark" alt="MySQL, PostgreSQL, Redis, Docker, Linux, Git and GitHub" /></a>
 </p>
 
-GenAI & Security
-
+**GenAI & Security**
 <p>
 <img src="https://img.shields.io/badge/LLM%20API%20Integration-2563EB?style=for-the-badge&logo=openai&logoColor=FFFFFF" alt="LLM API integration" />
 <img src="https://img.shields.io/badge/Agent--Based%20Systems-4F46E5?style=for-the-badge&logo=probot&logoColor=FFFFFF" alt="Agent-based systems" />
@@ -287,21 +283,22 @@ GenAI & Security
 <img src="https://img.shields.io/badge/SOC%20Fundamentals-475569?style=for-the-badge&logo=securityscorecard&logoColor=FFFFFF" alt="SOC fundamentals" />
 </p>
 
-🎓 Education & Certifications
+---
+
+## 🎓 Education & Certifications
 
 <table>
 <tr>
 <td width="58%" valign="top">
 
-Vellore Institute of Technology, Vellore
-
+**Vellore Institute of Technology, Vellore**
 B.Tech — Computer Science & Engineering (Information Security)
-2023 – 2027 · CGPA: 8.71 / 10
+`2023 – 2027` · **CGPA: 8.71 / 10**
 
 </td>
 <td width="42%" valign="top">
 
-Certifications
+**Certifications**
 
 ISC2 — Certified in Cybersecurity (CC)
 Oracle Cloud Infrastructure — Generative AI Professional
@@ -310,33 +307,25 @@ Oracle Cloud Infrastructure — Generative AI Professional
 </tr>
 </table>
 
-🏆 Highlights
+---
+
+## 🏆 Highlights
 
 <div align="center">
 
-120+
-
-Top 35%
-
-3
-
-8.71
-
-LeetCode problems
-
-picoCTF 2026 globally
-
-hackathons
-
-VIT CGPA / 10
+| 120+ | Top 35% | 3 | 8.71 |
+|:---:|:---:|:---:|:---:|
+| LeetCode problems | picoCTF 2026 globally | Hackathons | VIT CGPA / 10 |
 
 </div>
 
-Hackathons: Goldman Sachs India Hackathon 2026 · Yantra Central Hackathon · Deccan AI “Catalyst” Hackathon
+**Hackathons:** Goldman Sachs India Hackathon 2026 · Yantra Central Hackathon · Deccan AI "Catalyst" Hackathon
 
-picoCTF: Ranked in the top 35% globally in 2026, with work across binary exploitation, web exploitation, and cryptography.
+**picoCTF:** Ranked in the **top 35% globally** in 2026, with work across binary exploitation, web exploitation, and cryptography.
 
-📊 GitHub Analytics
+---
+
+## 📊 GitHub Analytics
 
 <div align="center">
 
@@ -344,7 +333,7 @@ picoCTF: Ranked in the top 35% globally in 2026, with work across binary exploit
 
 </div>
 
-🐍 Contribution Snake
+### 🐍 Contribution Snake
 
 <div align="center">
 
@@ -354,13 +343,15 @@ picoCTF: Ranked in the top 35% globally in 2026, with work across binary exploit
   <img src="https://raw.githubusercontent.com/Srikar-Bharadwaj/Srikar-Bharadwaj/output/github-contribution-grid-snake.svg" width="100%" alt="Animated GitHub contribution snake traversing Srikar Bharadwaj's contribution graph" />
 </picture>
 
-<sub>Contribution animation generated automatically by GitHub Actions.</sub>
+<sub>Both widgets above are generated automatically by the <code>Generate Profile Visuals</code> GitHub Action and refresh on every push and on a daily schedule.</sub>
 
 </div>
 
-🤝 Let’s Connect
+---
 
-I’m especially interested in backend engineering, AI-integrated products, distributed/event-driven systems, and security-aware software.
+## 🤝 Let's Connect
+
+I'm especially interested in **backend engineering, AI-integrated products, distributed/event-driven systems, and security-aware software**.
 
 <div align="center">
 
@@ -374,3 +365,5 @@ I’m especially interested in backend engineering, AI-integrated products, dist
 <sub>Built with Markdown, GitHub Actions, Mermaid, and a bias toward shipping useful software.</sub>
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:06B6D4,50:4F46E5,100:0B1220&section=footer" width="100%" alt="" />
