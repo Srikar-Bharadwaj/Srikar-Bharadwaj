@@ -1,37 +1,71 @@
-name: Generate Snake
+name: Profile Visuals
 
 on:
   schedule:
-    # Refresh the contribution animation once per day.
-    - cron: "0 0 * * *"
+    # Refresh once per day so the profile assets stay current.
+    - cron: "17 0 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
 
-# The workflow only writes generated assets to the output branch.
 permissions:
   contents: write
 
 concurrency:
-  group: contribution-animation
+  group: profile-visuals
   cancel-in-progress: true
 
 jobs:
   generate:
+    name: Generate profile assets
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate contribution animations
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Create output directories
+        run: mkdir -p dist/profile
+
+      - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: Srikar-Bharadwaj
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake.gif?color_snake=22D3EE&color_dots=0:0B1220,25:1E293B,50:334155,75:6366F1,100:22D3EE
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.gif?color_snake=%2322D3EE&color_dots=%230B1220,%231E293B,%23334155,%236366F1,%2322D3EE
 
-      - name: Publish generated assets
+      - name: Generate static GitHub activity card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=Srikar-Bharadwaj&show_icons=true&include_all_commits=true&hide_rank=true&custom_title=GitHub%20Activity&bg_color=0B1220&title_color=F8FAFC&text_color=CBD5E1&icon_color=22D3EE&border_color=1E293B
+          path: dist/profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate static top-languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=Srikar-Bharadwaj&layout=compact&langs_count=6&hide_border=false&bg_color=0B1220&title_color=F8FAFC&text_color=CBD5E1&border_color=1E293B
+          path: dist/profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Verify generated assets
+        run: |
+          test -s dist/github-contribution-grid-snake.svg
+          test -s dist/github-contribution-grid-snake-dark.svg
+          test -s dist/profile/stats.svg
+          test -s dist/profile/top-langs.svg
+          find dist -maxdepth 2 -type f -print
+
+      - name: Publish profile assets to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
